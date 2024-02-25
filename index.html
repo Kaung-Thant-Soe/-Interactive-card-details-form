@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="style.css" />
+
+        <title>Frontend Mentor | Interactive card details form</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card-container">
+                <div class="card-back">
+                    <img src="./images/bg-card-back.png" alt="" class="back" />
+                    <div class="back-cvc">000</div>
+                </div>
+                <div class="card-front">
+                    <img
+                        src="./images/bg-card-front.png"
+                        alt=""
+                        class="front"
+                    />
+                    <div class="info">
+                        <img
+                            src="./images/card-logo.svg"
+                            alt="front-card-logo"
+                            class="card-logo"
+                        />
+                        <div class="card-number">0000 0000 0000 0000</div>
+                        <div class="name-expire">
+                            <span class="name">Jane Appleseed</span>
+                            <div class="card-expire">
+                                <span class="card-expire-month">00</span>
+                                &#8725;
+                                <span class="card-expire-year">00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="user-information">
+                <form action="" class="">
+                    <label for="user-name">Cardholder Name</label>
+                    <input
+                        type="text"
+                        placeholder="e.g. Jane Appleseed"
+                        id="user-name"
+                        maxlength="25"
+                    />
+                    <p class="error-blank hidden">Can't be blank</p>
+                    <label for="bank-number">Card Number</label>
+                    <input
+                        type="tel"
+                        placeholder="e.g. 1234 5678 9123 0000"
+                        id="bank-number"
+                        maxlength="19"
+                    />
+                    <p class="error-blank hidden">Can't be blank</p>
+                    <div class="number-date">
+                        <div class="expire-date">
+                            <label for="expire-month expire-year"
+                                >Exp. Date (MM/YY)</label
+                            ><br />
+                            <input
+                                type="datetime"
+                                placeholder="MM"
+                                class="date month"
+                                €id="expire-month"
+                                maxlength="2"
+                            />
+                            <input
+                                type="datetime"
+                                placeholder="YY"
+                                class="date year"
+                                id="expire-year"
+                                maxlength="4"
+                            />
+                            <p
+                                class="error-blank hidden"
+                                style="margin-top: 5px"
+                            >
+                                Can't be blank
+                            </p>
+                        </div>
+                        <div class="cvc">
+                            <label for="cvc-form">CVC</label><br />
+                            <input
+                                type="number"
+                                placeholder="e.g. 123"
+                                class="cvc-number"
+                                id="cvc-form"
+                                maxlength="3"
+                            />
+                            <p
+                                class="error-blank hidden"
+                                style="margin-top: 5px"
+                            >
+                                Can't be blank
+                            </p>
+                        </div>
+                    </div>
+                </form>
+                <div class="finish hidden">
+                    <img src="./images/icon-complete.svg" alt="" />
+                    <div class="thank">Thank you!</div>
+                    <p class="noti">We've added your card details</p>
+                </div>
+                <button type="submit">Confirm</button>
+            </div>
+        </div>
+        <div class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+            >
+                Frontend Mentor </a
+            >. Coded by
+            <a href="https://www.frontendmentor.io/profile/Kaung-Thant-Soe">
+                Kaung Thant Soe </a
+            >.
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
